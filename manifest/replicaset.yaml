@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: spring-boot-ms
+  labels:
+    app: spring-boot-ms
+spec:
+  selector:
+    matchLabels:
+      app: spring-boot-ms
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: spring-boot-ms
+    spec:
+      containers:
+        - name: spring-boot-ms
+          image: enomoto/spring-boot-ms:latest
+      

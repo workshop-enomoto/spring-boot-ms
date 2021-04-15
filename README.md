@@ -1,2 +1,1 @@
-# spring-boot-ms
-Spring Boot Microservice
+# spring-boot-ms-01

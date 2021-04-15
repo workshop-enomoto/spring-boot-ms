@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: spring-boot-ms
+spec:
+  containers:
+    - name: spring-boot-ms
+      image: "enomoto/spring-boot-ms:latest"

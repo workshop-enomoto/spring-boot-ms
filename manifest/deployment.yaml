@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-boot-ms
+spec:
+  selector:
+    matchLabels:
+      app: spring-boot-ms
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: spring-boot-ms
+    spec:
+      containers:
+        - name: spring-boot-ms
+          image: "enomoto/spring-boot-ms:latest"
+          ports:
+          - containerPort: 9001
+          resources:
+            limits:
+              cpu: "1"
+              memory: "200Mi"
+            requests:
+              cpu: "0.5"
+              memory: "100Mi"
