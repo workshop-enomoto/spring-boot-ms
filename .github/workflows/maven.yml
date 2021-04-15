@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: enomoto/spring-boot-ms:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/spring-boot-ms:latest
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
