@@ -15,7 +15,7 @@ import lombok.extern.slf4j.Slf4j;
 public class HelloWorldController {
 
     private final AtomicInteger counter = new AtomicInteger(0);
-    private final String message = "Hello Spring Boot";
+    private final String message = "Hello World Spring Boot";
     
     @RequestMapping(method = RequestMethod.GET)
     public String HelloWorld() {
