@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @SpringBootApplication
 @Slf4j
+// Teste do build e push
 public class HelloSpringBootApplication {
 
 	public static void main(String[] args) {
